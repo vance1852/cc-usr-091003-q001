@@ -1,0 +1,53 @@
+{
+    "scenario":  "night-isolation-route",
+    "events":  [
+                   {
+                       "event_id":  "001-event-1",
+                       "kind":  "mission_created",
+                       "occurred_at":  "2026-09-10T08:00:00+08:00",
+                       "received_at":  "2026-09-10T08:01:00+08:00",
+                       "attributes":  {
+                                          "robot_id":  "medbot-07",
+                                          "zone":  "ward-c3",
+                                          "payload_class":  "medicine",
+                                          "sequence":  1
+                                      }
+                   },
+                   {
+                       "event_id":  "001-event-2",
+                       "kind":  "zone_closed",
+                       "occurred_at":  "2026-09-10T08:01:00+08:00",
+                       "received_at":  "2026-09-10T08:02:00+08:00",
+                       "attributes":  {
+                                          "robot_id":  "medbot-07",
+                                          "zone":  "ward-c3",
+                                          "payload_class":  "medicine",
+                                          "sequence":  2
+                                      }
+                   },
+                   {
+                       "event_id":  "001-event-3",
+                       "kind":  "door_result",
+                       "occurred_at":  "2026-09-10T08:02:00+08:00",
+                       "received_at":  "2026-09-10T08:03:00+08:00",
+                       "attributes":  {
+                                          "robot_id":  "medbot-07",
+                                          "zone":  "ward-c3",
+                                          "payload_class":  "medicine",
+                                          "sequence":  3
+                                      }
+                   },
+                   {
+                       "event_id":  "001-event-4",
+                       "kind":  "robot_arrived",
+                       "occurred_at":  "2026-09-10T08:03:00+08:00",
+                       "received_at":  "2026-09-10T08:04:00+08:00",
+                       "attributes":  {
+                                          "robot_id":  "medbot-07",
+                                          "zone":  "ward-c3",
+                                          "payload_class":  "medicine",
+                                          "sequence":  4
+                                      }
+                   }
+               ]
+}
