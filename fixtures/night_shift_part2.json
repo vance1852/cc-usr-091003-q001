@@ -1,0 +1,93 @@
+{
+  "scenario": "night-isolation-route-part2",
+  "events": [
+    {
+      "event_id": "evt-0204",
+      "kind": "door_result",
+      "occurred_at": "2026-09-22T20:34:00+08:00",
+      "received_at": "2026-09-22T20:34:05+08:00",
+      "attributes": {
+        "door_id": "door-nurse",
+        "edge_id": "e-channel-nurse",
+        "result": "granted",
+        "request_id": "rq-92",
+        "sequence": 24
+      }
+    },
+    {
+      "event_id": "evt-0202",
+      "kind": "cleaning_completed",
+      "occurred_at": "2026-09-22T20:32:00+08:00",
+      "received_at": "2026-09-22T20:32:05+08:00",
+      "attributes": {
+        "certificate_id": "cert-dc-01",
+        "target": "decon-channel",
+        "target_kind": "zone",
+        "valid_from": "2026-09-22T20:32:00+08:00",
+        "valid_until": "2026-09-22T22:32:00+08:00",
+        "sequence": 22
+      }
+    },
+    {
+      "event_id": "evt-0205",
+      "kind": "cleaning_completed",
+      "occurred_at": "2026-09-22T20:40:00+08:00",
+      "received_at": "2026-09-22T20:40:05+08:00",
+      "attributes": {
+        "certificate_id": "cert-lift-01",
+        "target": "lift-a",
+        "target_kind": "elevator",
+        "valid_from": "2026-09-22T20:40:00+08:00",
+        "valid_until": "2026-09-22T22:40:00+08:00",
+        "sequence": 25
+      }
+    },
+    {
+      "event_id": "evt-0206",
+      "kind": "cleaning_completed",
+      "occurred_at": "2026-09-22T20:41:00+08:00",
+      "received_at": "2026-09-22T20:41:05+08:00",
+      "attributes": {
+        "certificate_id": "cert-ns-01",
+        "target": "iso-nurse",
+        "target_kind": "zone",
+        "valid_from": "2026-09-22T20:41:00+08:00",
+        "valid_until": "2026-09-22T22:41:00+08:00",
+        "sequence": 26
+      }
+    },
+    {
+      "event_id": "evt-0201",
+      "kind": "robot_offline",
+      "occurred_at": "2026-09-22T20:20:00+08:00",
+      "received_at": "2026-09-22T20:20:05+08:00",
+      "attributes": {
+        "robot_id": "medbot-07",
+        "sequence": 21
+      }
+    },
+    {
+      "event_id": "evt-0203",
+      "kind": "robot_online",
+      "occurred_at": "2026-09-22T20:33:00+08:00",
+      "received_at": "2026-09-22T20:33:05+08:00",
+      "attributes": {
+        "robot_id": "medbot-07",
+        "zone": "pharmacy",
+        "sequence": 23
+      }
+    },
+    {
+      "event_id": "evt-0207",
+      "kind": "robot_arrived",
+      "occurred_at": "2026-09-22T20:15:00+08:00",
+      "received_at": "2026-09-22T20:15:05+08:00",
+      "attributes": {
+        "robot_id": "medbot-07",
+        "zone": "lift-lobby",
+        "mission_id": "M-0401",
+        "sequence": 27
+      }
+    }
+  ]
+}

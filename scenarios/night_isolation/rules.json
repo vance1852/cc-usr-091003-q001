@@ -1,0 +1,27 @@
+{
+  "rule_version": "night-2026.09-v3",
+  "payload_classes": ["medicine", "specimen", "linen_clean", "waste"],
+  "payload_tiers": {
+    "medicine": 0,
+    "specimen": 1,
+    "linen_clean": 0,
+    "waste": 2
+  },
+  "contamination_tiers": {
+    "clean": 0,
+    "suspected": 1,
+    "confirmed": 2
+  },
+  "contamination_spread": {
+    "confirmed": ["suspected"]
+  },
+  "cleaning_valid_seconds": 7200,
+  "temp_limits": {
+    "medicine": 5400,
+    "specimen": 3600,
+    "linen_clean": null,
+    "waste": null
+  },
+  "requires_certificate": ["specimen"],
+  "elevator_clean_min_tier": 0
+}

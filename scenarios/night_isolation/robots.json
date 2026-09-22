@@ -1,0 +1,23 @@
+[
+  {
+    "robot_id": "medbot-07",
+    "home_zone": "pharmacy",
+    "max_tier": 1,
+    "elevator_access": ["lift-a"],
+    "payload_classes": ["medicine", "specimen"]
+  },
+  {
+    "robot_id": "specbot-03",
+    "home_zone": "pharmacy",
+    "max_tier": 1,
+    "elevator_access": ["lift-a"],
+    "payload_classes": ["specimen"]
+  },
+  {
+    "robot_id": "washbot-02",
+    "home_zone": "linen-room",
+    "max_tier": 2,
+    "elevator_access": [],
+    "payload_classes": ["waste", "linen_clean"]
+  }
+]

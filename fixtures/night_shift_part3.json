@@ -1,0 +1,79 @@
+{
+  "scenario": "night-isolation-route-part3",
+  "events": [
+    {
+      "event_id": "evt-0303",
+      "kind": "mission_created",
+      "occurred_at": "2026-09-22T21:50:00+08:00",
+      "received_at": "2026-09-22T21:50:05+08:00",
+      "attributes": {
+        "mission_id": "M-0902",
+        "robot_id": "medbot-07",
+        "payload_class": "medicine",
+        "origin": "pharmacy",
+        "destination": "iso-nurse",
+        "sequence": 33
+      }
+    },
+    {
+      "event_id": "evt-0301",
+      "kind": "robot_arrived",
+      "occurred_at": "2026-09-22T20:50:00+08:00",
+      "received_at": "2026-09-22T20:50:05+08:00",
+      "attributes": {
+        "robot_id": "medbot-07",
+        "zone": "iso-nurse",
+        "mission_id": "M-0901",
+        "sequence": 31
+      }
+    },
+    {
+      "event_id": "evt-0304",
+      "kind": "robot_arrived",
+      "occurred_at": "2026-09-22T23:25:00+08:00",
+      "received_at": "2026-09-22T23:25:05+08:00",
+      "attributes": {
+        "robot_id": "medbot-07",
+        "zone": "iso-nurse",
+        "mission_id": "M-0902",
+        "sequence": 34
+      }
+    },
+    {
+      "event_id": "evt-0302",
+      "kind": "robot_arrived",
+      "occurred_at": "2026-09-22T20:51:00+08:00",
+      "received_at": "2026-09-22T20:55:00+08:00",
+      "attributes": {
+        "robot_id": "medbot-07",
+        "zone": "iso-nurse",
+        "mission_id": "M-0901",
+        "sequence": 32
+      }
+    },
+    {
+      "event_id": "evt-0305",
+      "kind": "robot_arrived",
+      "occurred_at": "2026-09-22T20:45:00+08:00",
+      "received_at": "2026-09-22T20:45:05+08:00",
+      "attributes": {
+        "robot_id": "specbot-03",
+        "zone": "pharmacy",
+        "mission_id": "M-0201",
+        "sequence": 35
+      }
+    },
+    {
+      "event_id": "evt-0306",
+      "kind": "robot_arrived",
+      "occurred_at": "2026-09-22T20:46:00+08:00",
+      "received_at": "2026-09-22T20:46:05+08:00",
+      "attributes": {
+        "robot_id": "washbot-02",
+        "zone": "iso-entry",
+        "mission_id": "M-0301",
+        "sequence": 36
+      }
+    }
+  ]
+}

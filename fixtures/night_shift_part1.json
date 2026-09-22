@@ -1,0 +1,129 @@
+{
+  "scenario": "night-isolation-route-part1",
+  "events": [
+    {
+      "event_id": "evt-0106",
+      "kind": "door_result",
+      "occurred_at": "2026-09-22T20:05:00+08:00",
+      "received_at": "2026-09-22T20:05:05+08:00",
+      "attributes": {
+        "door_id": "door-nurse",
+        "edge_id": "e-channel-nurse",
+        "result": "denied",
+        "request_id": "rq-78",
+        "mission_id": "M-0901",
+        "sequence": 6
+      }
+    },
+    {
+      "event_id": "evt-0102",
+      "kind": "mission_created",
+      "occurred_at": "2026-09-22T20:01:00+08:00",
+      "received_at": "2026-09-22T20:01:05+08:00",
+      "attributes": {
+        "mission_id": "M-0201",
+        "robot_id": "specbot-03",
+        "payload_class": "specimen",
+        "origin": "lab-clean",
+        "destination": "pharmacy",
+        "sequence": 2
+      }
+    },
+    {
+      "event_id": "evt-0108",
+      "kind": "cleaning_completed",
+      "occurred_at": "2026-09-22T20:07:00+08:00",
+      "received_at": "2026-09-22T20:07:05+08:00",
+      "attributes": {
+        "certificate_id": "cert-ent-01",
+        "target": "iso-entry",
+        "target_kind": "zone",
+        "valid_from": "2026-09-22T20:07:00+08:00",
+        "valid_until": "2026-09-22T22:07:00+08:00",
+        "sequence": 8
+      }
+    },
+    {
+      "event_id": "evt-0101",
+      "kind": "mission_created",
+      "occurred_at": "2026-09-22T20:00:00+08:00",
+      "received_at": "2026-09-22T20:00:05+08:00",
+      "attributes": {
+        "mission_id": "M-0901",
+        "robot_id": "medbot-07",
+        "payload_class": "medicine",
+        "origin": "pharmacy",
+        "destination": "iso-nurse",
+        "sequence": 1
+      }
+    },
+    {
+      "event_id": "evt-0107",
+      "kind": "contamination_reported",
+      "occurred_at": "2026-09-22T20:06:00+08:00",
+      "received_at": "2026-09-22T20:06:05+08:00",
+      "attributes": {
+        "target": "decon-channel",
+        "target_kind": "zone",
+        "level": "confirmed",
+        "sequence": 7
+      }
+    },
+    {
+      "event_id": "evt-0104",
+      "kind": "door_result",
+      "occurred_at": "2026-09-22T20:03:00+08:00",
+      "received_at": "2026-09-22T20:03:05+08:00",
+      "attributes": {
+        "door_id": "door-lab",
+        "edge_id": "e-channel-lab",
+        "result": "granted",
+        "request_id": "rq-77",
+        "mission_id": "M-0201",
+        "sequence": 4
+      }
+    },
+    {
+      "event_id": "evt-0110",
+      "kind": "mission_created",
+      "occurred_at": "2026-09-22T20:04:00+08:00",
+      "received_at": "2026-09-22T20:04:05+08:00",
+      "attributes": {
+        "mission_id": "M-0401",
+        "robot_id": "medbot-07",
+        "payload_class": "medicine",
+        "origin": "pharmacy",
+        "destination": "lift-lobby",
+        "sequence": 10
+      }
+    },
+    {
+      "event_id": "evt-0105",
+      "kind": "door_result",
+      "occurred_at": "2026-09-22T20:03:10+08:00",
+      "received_at": "2026-09-22T20:04:00+08:00",
+      "attributes": {
+        "door_id": "door-lab",
+        "edge_id": "e-channel-lab",
+        "result": "granted",
+        "request_id": "rq-77",
+        "mission_id": "M-0201",
+        "sequence": 5
+      }
+    },
+    {
+      "event_id": "evt-0103",
+      "kind": "mission_created",
+      "occurred_at": "2026-09-22T20:02:00+08:00",
+      "received_at": "2026-09-22T20:02:05+08:00",
+      "attributes": {
+        "mission_id": "M-0301",
+        "robot_id": "washbot-02",
+        "payload_class": "waste",
+        "origin": "linen-room",
+        "destination": "iso-entry",
+        "sequence": 3
+      }
+    }
+  ]
+}

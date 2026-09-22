@@ -1,0 +1,139 @@
+{
+  "zones": [
+    {
+      "zone_id": "pharmacy",
+      "name": "中心药房",
+      "kind": "clean",
+      "floor": "F1",
+      "adjacency": [["e-pharm-lift"]],
+      "elevator_banks": []
+    },
+    {
+      "zone_id": "lift-lobby",
+      "name": "一层电梯厅",
+      "kind": "clean",
+      "floor": "F1",
+      "adjacency": [["e-pharm-lift"], ["e-lift-a"]],
+      "elevator_banks": ["lift-a"]
+    },
+    {
+      "zone_id": "iso-entry",
+      "name": "隔离病区前室",
+      "kind": "buffer",
+      "floor": "F2",
+      "adjacency": [["e-lift-a"], ["e-entry-channel"]],
+      "elevator_banks": ["lift-a"]
+    },
+    {
+      "zone_id": "decon-channel",
+      "name": "新消毒通道",
+      "kind": "buffer",
+      "floor": "F2",
+      "adjacency": [["e-entry-channel"], ["e-channel-lab", "e-channel-nurse"]],
+      "elevator_banks": []
+    },
+    {
+      "zone_id": "lab-clean",
+      "name": "洁净标本间",
+      "kind": "clean",
+      "floor": "F2",
+      "adjacency": [["e-channel-lab"]],
+      "elevator_banks": []
+    },
+    {
+      "zone_id": "iso-nurse",
+      "name": "隔离护士站",
+      "kind": "buffer",
+      "floor": "F2",
+      "adjacency": [["e-channel-nurse"], ["e-nurse-ward"]],
+      "elevator_banks": []
+    },
+    {
+      "zone_id": "iso-ward",
+      "name": "隔离病房",
+      "kind": "dirty",
+      "floor": "F2",
+      "adjacency": [["e-nurse-ward"], ["e-ward-linen"]],
+      "elevator_banks": []
+    },
+    {
+      "zone_id": "linen-room",
+      "name": "污染织物暂存间",
+      "kind": "dirty",
+      "floor": "F2",
+      "adjacency": [["e-ward-linen"]],
+      "elevator_banks": []
+    }
+  ],
+  "edges": [
+    {
+      "edge_id": "e-pharm-lift",
+      "a": "pharmacy",
+      "b": "lift-lobby",
+      "kind": "corridor",
+      "base_cost": 60,
+      "capacity": 2
+    },
+    {
+      "edge_id": "e-lift-a",
+      "a": "lift-lobby",
+      "b": "iso-entry",
+      "kind": "elevator",
+      "base_cost": 90,
+      "capacity": 1,
+      "elevator_id": "lift-a"
+    },
+    {
+      "edge_id": "e-entry-channel",
+      "a": "iso-entry",
+      "b": "decon-channel",
+      "kind": "corridor",
+      "base_cost": 30,
+      "capacity": 2
+    },
+    {
+      "edge_id": "e-channel-lab",
+      "a": "decon-channel",
+      "b": "lab-clean",
+      "kind": "narrow",
+      "base_cost": 45,
+      "capacity": 1,
+      "door_id": "door-lab"
+    },
+    {
+      "edge_id": "e-channel-nurse",
+      "a": "decon-channel",
+      "b": "iso-nurse",
+      "kind": "narrow",
+      "base_cost": 45,
+      "capacity": 1,
+      "door_id": "door-nurse"
+    },
+    {
+      "edge_id": "e-nurse-ward",
+      "a": "iso-nurse",
+      "b": "iso-ward",
+      "kind": "corridor",
+      "base_cost": 40,
+      "capacity": 2
+    },
+    {
+      "edge_id": "e-ward-linen",
+      "a": "iso-ward",
+      "b": "linen-room",
+      "kind": "corridor",
+      "base_cost": 35,
+      "capacity": 2
+    }
+  ],
+  "elevators": [
+    {
+      "elevator_id": "lift-a",
+      "edge_id": "e-lift-a",
+      "serves": ["lift-lobby", "iso-entry"],
+      "capacity": 1,
+      "allowed_payloads": ["medicine", "specimen", "linen_clean"],
+      "cycle_cost": 90
+    }
+  ]
+}
