@@ -8,5 +8,8 @@ version = "0.1.0"
 description = "院内配送机器人洁污通行领域契约"
 requires-python = ">=3.11"
 
+[project.scripts]
+hospital-route = "hospital_route.cli:main"
+
 [tool.setuptools.packages.find]
 where = ["src"]

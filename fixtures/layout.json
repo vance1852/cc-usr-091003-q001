@@ -1,0 +1,25 @@
+{
+    "layout_id": "isolation-tower-3f",
+    "zones": [
+        {"id": "pharmacy", "grade": "clean"},
+        {"id": "corridor-c3", "grade": "shared"},
+        {"id": "ward-c3", "grade": "isolation"},
+        {"id": "lift-lobby", "grade": "shared"},
+        {"id": "lab", "grade": "clean"},
+        {"id": "linen-room", "grade": "dirty"},
+        {"id": "waste-room", "grade": "dirty"}
+    ],
+    "connectors": [
+        {"id": "cor-c3", "kind": "corridor", "endpoints": ["pharmacy", "corridor-c3"], "capacity": 1, "traverse_seconds": 60, "grade": "shared"},
+        {"id": "cor-c3w", "kind": "corridor", "endpoints": ["corridor-c3", "ward-c3"], "capacity": 1, "traverse_seconds": 60, "grade": "shared"},
+        {"id": "cor-lobby", "kind": "corridor", "endpoints": ["corridor-c3", "lift-lobby"], "capacity": 1, "traverse_seconds": 45, "grade": "shared"},
+        {"id": "lift-2", "kind": "elevator", "endpoints": ["lift-lobby", "lab"], "capacity": 2, "traverse_seconds": 120, "grade": "clean", "payload_classes": ["medicine", "specimen"]},
+        {"id": "lift-5", "kind": "elevator", "endpoints": ["lift-lobby", "linen-room"], "capacity": 1, "traverse_seconds": 120, "grade": "dirty", "payload_classes": ["contaminated_waste", "specimen"]},
+        {"id": "cor-waste", "kind": "corridor", "endpoints": ["linen-room", "waste-room"], "capacity": 1, "traverse_seconds": 30, "grade": "dirty"}
+    ],
+    "robots": {
+        "medbot-07": "pharmacy",
+        "medbot-11": "pharmacy",
+        "wastebot-02": "ward-c3"
+    }
+}

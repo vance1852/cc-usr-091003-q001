@@ -1,0 +1,22 @@
+{
+    "rules_version": "zoning-2026.09.1",
+    "temp_limits_minutes": {"medicine": 30, "specimen": 45},
+    "cert_valid_minutes": 120,
+    "payload_cleanliness": {
+        "medicine": "clean",
+        "specimen": "sealed",
+        "contaminated_waste": "dirty"
+    },
+    "zone_grade_access": {
+        "clean": ["clean", "shared", "isolation"],
+        "sealed": ["clean", "shared", "isolation", "dirty"],
+        "dirty": ["shared", "isolation", "dirty"]
+    },
+    "connector_grade_access": {
+        "clean": ["clean", "shared"],
+        "sealed": ["clean", "shared", "dirty"],
+        "dirty": ["shared", "dirty"]
+    },
+    "slot_horizon_minutes": 120,
+    "slot_step_seconds": 30
+}

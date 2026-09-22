@@ -1,0 +1,187 @@
+{
+    "scenario": "night-shift-isolation-3f",
+    "events": [
+        {
+            "event_id": "e03",
+            "kind": "mission_created",
+            "occurred_at": "2026-09-10T22:01:00+08:00",
+            "received_at": "2026-09-10T22:01:05+08:00",
+            "attributes": {"robot_id": "wastebot-02", "zone": "waste-room", "origin": "ward-c3", "payload_class": "contaminated_waste", "sequence": 1}
+        },
+        {
+            "event_id": "e14",
+            "kind": "door_result",
+            "occurred_at": "2026-09-10T22:36:00+08:00",
+            "received_at": "2026-09-10T22:36:05+08:00",
+            "attributes": {"robot_id": "medbot-11", "zone": "ward-c3", "decision": "denied", "receipt_id": "rc-902"}
+        },
+        {
+            "event_id": "e01",
+            "kind": "mission_created",
+            "occurred_at": "2026-09-10T22:00:00+08:00",
+            "received_at": "2026-09-10T22:00:05+08:00",
+            "attributes": {"robot_id": "medbot-07", "zone": "ward-c3", "payload_class": "medicine", "sequence": 1, "temp_limit_minutes": 30}
+        },
+        {
+            "event_id": "e26",
+            "kind": "zone_contaminated",
+            "occurred_at": "2026-09-10T23:30:00+08:00",
+            "received_at": "2026-09-10T23:30:05+08:00",
+            "attributes": {"zone": "lift-lobby", "source": "环卫巡检"}
+        },
+        {
+            "event_id": "e07",
+            "kind": "zone_closed",
+            "occurred_at": "2026-09-10T22:06:00+08:00",
+            "received_at": "2026-09-10T22:06:05+08:00",
+            "attributes": {"zone": "ward-c3", "reason": "终末消毒"}
+        },
+        {
+            "event_id": "e19",
+            "kind": "cleaning_recorded",
+            "occurred_at": "2026-09-10T22:45:00+08:00",
+            "received_at": "2026-09-10T22:45:05+08:00",
+            "attributes": {"connector": "cor-lobby", "cert_id": "CT-90", "cert_issued_at": "2026-09-10T22:00:00+08:00"}
+        },
+        {
+            "event_id": "e05",
+            "kind": "door_result",
+            "occurred_at": "2026-09-10T22:03:00+08:00",
+            "received_at": "2026-09-10T22:03:05+08:00",
+            "attributes": {"robot_id": "medbot-07", "zone": "ward-c3", "decision": "granted", "receipt_id": "rc-901"}
+        },
+        {
+            "event_id": "e22",
+            "kind": "robot_arrived",
+            "occurred_at": "2026-09-10T22:58:00+08:00",
+            "received_at": "2026-09-10T23:15:05+08:00",
+            "attributes": {"robot_id": "medbot-07", "zone": "lab"}
+        },
+        {
+            "event_id": "e10",
+            "kind": "cleaning_recorded",
+            "occurred_at": "2026-09-10T22:20:00+08:00",
+            "received_at": "2026-09-10T22:20:05+08:00",
+            "attributes": {"connector": "cor-c3w", "cert_id": "CT-88", "cert_issued_at": "2026-09-10T21:40:00+08:00"}
+        },
+        {
+            "event_id": "e02",
+            "kind": "mission_created",
+            "occurred_at": "2026-09-10T22:00:30+08:00",
+            "received_at": "2026-09-10T22:00:35+08:00",
+            "attributes": {"robot_id": "medbot-11", "zone": "ward-c3", "payload_class": "medicine", "sequence": 1, "temp_limit_minutes": 90}
+        },
+        {
+            "event_id": "e16",
+            "kind": "door_result",
+            "occurred_at": "2026-09-10T22:39:00+08:00",
+            "received_at": "2026-09-10T22:39:05+08:00",
+            "attributes": {"robot_id": "medbot-11", "zone": "ward-c3", "decision": "granted", "receipt_id": "rc-903"}
+        },
+        {
+            "event_id": "e24",
+            "kind": "cleaning_recorded",
+            "occurred_at": "2026-09-10T22:55:00+08:00",
+            "received_at": "2026-09-10T23:25:05+08:00",
+            "attributes": {"connector": "lift-5", "cert_id": "CT-91", "cert_issued_at": "2026-09-10T22:30:00+08:00"}
+        },
+        {
+            "event_id": "e08",
+            "kind": "robot_arrived",
+            "occurred_at": "2026-09-10T22:08:00+08:00",
+            "received_at": "2026-09-10T22:08:05+08:00",
+            "attributes": {"robot_id": "wastebot-02", "zone": "waste-room"}
+        },
+        {
+            "event_id": "e12",
+            "kind": "manual_override",
+            "occurred_at": "2026-09-10T22:31:00+08:00",
+            "received_at": "2026-09-10T22:31:05+08:00",
+            "attributes": {"mission_id": "medbot-11#1", "action": "resume", "operator": "王护士", "reason": "CT-88 复消完成，确认放行"}
+        },
+        {
+            "event_id": "e20",
+            "kind": "robot_arrived",
+            "occurred_at": "2026-09-10T22:50:00+08:00",
+            "received_at": "2026-09-10T22:50:05+08:00",
+            "attributes": {"robot_id": "medbot-11", "zone": "lab"}
+        },
+        {
+            "event_id": "e04",
+            "kind": "door_result",
+            "occurred_at": "2026-09-10T22:02:00+08:00",
+            "received_at": "2026-09-10T22:02:05+08:00",
+            "attributes": {"robot_id": "medbot-07", "zone": "ward-c3", "decision": "granted", "receipt_id": "rc-901"}
+        },
+        {
+            "event_id": "e25",
+            "kind": "cleaning_recorded",
+            "occurred_at": "2026-09-10T21:00:00+08:00",
+            "received_at": "2026-09-10T23:26:05+08:00",
+            "attributes": {"connector": "cor-waste", "cert_id": "CT-92", "cert_issued_at": "2026-09-10T20:30:00+08:00"}
+        },
+        {
+            "event_id": "e13",
+            "kind": "mission_created",
+            "occurred_at": "2026-09-10T22:31:30+08:00",
+            "received_at": "2026-09-10T22:31:40+08:00",
+            "attributes": {"robot_id": "medbot-07", "zone": "lab", "origin": "ward-c3", "payload_class": "medicine", "sequence": 2, "temp_limit_minutes": 30}
+        },
+        {
+            "event_id": "e06",
+            "kind": "robot_arrived",
+            "occurred_at": "2026-09-10T22:05:00+08:00",
+            "received_at": "2026-09-10T22:05:05+08:00",
+            "attributes": {"robot_id": "medbot-07", "zone": "ward-c3"}
+        },
+        {
+            "event_id": "e18",
+            "kind": "mission_created",
+            "occurred_at": "2026-09-10T22:41:00+08:00",
+            "received_at": "2026-09-10T22:41:05+08:00",
+            "attributes": {"robot_id": "medbot-11", "zone": "lab", "origin": "ward-c3", "payload_class": "specimen", "sequence": 2, "temp_limit_minutes": 45}
+        },
+        {
+            "event_id": "e09",
+            "kind": "cleaning_recorded",
+            "occurred_at": "2026-09-10T22:10:00+08:00",
+            "received_at": "2026-09-10T22:10:05+08:00",
+            "attributes": {"connector": "cor-c3w", "cert_id": "CT-77", "cert_issued_at": "2026-09-10T19:30:00+08:00"}
+        },
+        {
+            "event_id": "e21",
+            "kind": "robot_arrived",
+            "occurred_at": "2026-09-10T23:10:00+08:00",
+            "received_at": "2026-09-10T23:10:05+08:00",
+            "attributes": {"robot_id": "medbot-07", "zone": "lab"}
+        },
+        {
+            "event_id": "e11",
+            "kind": "zone_reopened",
+            "occurred_at": "2026-09-10T22:30:00+08:00",
+            "received_at": "2026-09-10T22:30:05+08:00",
+            "attributes": {"zone": "ward-c3"}
+        },
+        {
+            "event_id": "e15",
+            "kind": "manual_override",
+            "occurred_at": "2026-09-10T22:38:00+08:00",
+            "received_at": "2026-09-10T22:38:05+08:00",
+            "attributes": {"mission_id": "medbot-11#1", "action": "resume", "operator": "王护士", "reason": "门禁重新授权"}
+        },
+        {
+            "event_id": "e17",
+            "kind": "robot_arrived",
+            "occurred_at": "2026-09-10T22:40:00+08:00",
+            "received_at": "2026-09-10T22:40:05+08:00",
+            "attributes": {"robot_id": "medbot-11", "zone": "ward-c3"}
+        },
+        {
+            "event_id": "e23",
+            "kind": "manual_override",
+            "occurred_at": "2026-09-10T23:20:00+08:00",
+            "received_at": "2026-09-10T23:20:05+08:00",
+            "attributes": {"mission_id": "medbot-07#2", "action": "resume", "operator": "王护士", "reason": "离线补传证实 22:58 送达，温控复核通过"}
+        }
+    ]
+}
